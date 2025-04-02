@@ -25,18 +25,3 @@ space compllexity: O(n) may be for hash map.
 The fact that search and update operations are O(1) in hash map /dictionary on average has helped to navigate through this problem easily
 
 
-class Solution(object):
-    def twoSum(self, nums, target):
-        """
-        :type nums: List[int]
-        :type target: int
-        :rtype: List[int]
-        """
-        x={}
-        for i,num in enumerate(nums):
-            y=target-num
-            if y in x:
-                return [x[y],i]
-            else:
-                x[num]=i
-        
